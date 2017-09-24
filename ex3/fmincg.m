@@ -49,9 +49,9 @@ function [X, fX, i] = fmincg(f, X, options, P1, P2, P3, P4, P5)
 
 % Read options
 if exist('options', 'var') && ~isempty(options) && isfield(options, 'MaxIter')
-    length = options.MaxIter;
+  length = options.MaxIter;
 else
-    length = 100;
+  length = 100;
 end
 
 RHO = 0.01;                            % a bunch of constants for line searches
